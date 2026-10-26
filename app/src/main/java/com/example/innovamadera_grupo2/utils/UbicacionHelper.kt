@@ -6,8 +6,8 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
+import android.os.Build
 import androidx.core.content.ContextCompat
-import androidx.core.location.LocationManagerCompat
 
 /** Acceso a la ubicación del dispositivo (recurso nativo #2). Sin dependencias extra. */
 object UbicacionHelper {
@@ -17,7 +17,7 @@ object UbicacionHelper {
 
     fun tienePermiso(context: Context): Boolean =
         concedido(context, Manifest.permission.ACCESS_FINE_LOCATION) ||
-            concedido(context, Manifest.permission.ACCESS_COARSE_LOCATION)
+                concedido(context, Manifest.permission.ACCESS_COARSE_LOCATION)
 
     /** Entrega la ubicación actual en [onResultado], o null si no hay permiso / GPS apagado. */
     @SuppressLint("MissingPermission")
@@ -34,9 +34,17 @@ object UbicacionHelper {
             return
         }
         try {
-            LocationManagerCompat.getCurrentLocation(
-                manager, proveedor, null, ContextCompat.getMainExecutor(context)
-            ) { ubicacion -> onResultado(ubicacion) }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                // Android 11+: pide una ubicación nueva.
+                manager.getCurrentLocation(
+                    proveedor,
+                    null,
+                    ContextCompat.getMainExecutor(context)
+                ) { ubicacion -> onResultado(ubicacion) }
+            } else {
+                // Android 7 a 10: usa la última ubicación conocida.
+                onResultado(manager.getLastKnownLocation(proveedor))
+            }
         } catch (e: SecurityException) {
             onResultado(null)
         }
