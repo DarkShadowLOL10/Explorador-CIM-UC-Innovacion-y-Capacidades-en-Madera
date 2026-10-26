@@ -7,12 +7,12 @@ Es un MVP académico que ayuda a una persona externa a **descubrir, filtrar y re
 
 ## Integrantes
 
-| Nombre |        
-|---|---|
-| _ Carlos Pinilla _                            
-| _ Matias Chavez_
-| _ Matias Gomez_                            
-| _ Enmanuel Chirinos_
+| Nombre |
+|---|
+| Carlos Pinilla |
+| Matías Chávez |
+| Matías Gómez |
+| Enmanuel Chirinos |
 
 **Equipo N°:** 2  ·  **Planificación (Trello):** https://trello.com/b/TBAG0nST
 
