@@ -7,12 +7,14 @@ Es un MVP académico que ayuda a una persona externa a **descubrir, filtrar y re
 
 ## Integrantes
 
-| Nombre | Rol / aportes principales |
+| Nombre |        
 |---|---|
-| _Completar nombre y apellido_ | _Completar_ |
-| _Completar nombre y apellido_ | _Completar_ |
+| _ Carlos Pinilla _                            
+| _ Matias Chavez_
+| _ Matias Gomez_                            
+| _ Enmanuel Chirinos_
 
-**Equipo N°:** _completar_  ·  **Planificación (Trello):** _pegar enlace del tablero_
+**Equipo N°:** 2  ·  **Planificación (Trello):** https://trello.com/b/TBAG0nST
 
 ## Funcionalidades implementadas
 
