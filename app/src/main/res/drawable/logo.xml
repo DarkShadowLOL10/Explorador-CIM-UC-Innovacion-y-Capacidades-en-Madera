@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="120dp"
+    android:viewportWidth="240"
+    android:viewportHeight="120">
+    <!-- Fondo -->
+    <path
+        android:fillColor="#1F4D3A"
+        android:pathData="M0,0h240v120h-240z" />
+    <!-- Tres troncos de madera (círculo con anillos) -->
+    <path
+        android:fillColor="#B9E04C"
+        android:pathData="M60,60m-34,0a34,34 0,1 1,68 0a34,34 0,1 1,-68 0" />
+    <path
+        android:fillColor="#1F4D3A"
+        android:pathData="M60,60m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
+    <path
+        android:fillColor="#B9E04C"
+        android:pathData="M60,60m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0" />
+    <path
+        android:fillColor="#1F4D3A"
+        android:pathData="M60,60m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <!-- Letras CIM -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,36h30v10h-20v28h20v10h-30z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M158,36h10v48h-10z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M176,84v-48h10l12,28l12,-28h10v48h-10v-28l-12,28l-12,-28v28z" />
+</vector>
