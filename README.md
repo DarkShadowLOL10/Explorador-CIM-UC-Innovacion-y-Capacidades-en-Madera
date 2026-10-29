@@ -1,4 +1,4 @@
-# Explorador CIM UC (versión simplificada)
+# Explorador CIM UC 
 
 App Android (Kotlin + Jetpack Compose + MVVM) para la asignatura **DSY1105 – Desarrollo de Aplicaciones Móviles**.
 Permite explorar un catálogo **ficticio** del Centro UC de Innovación en Madera (CIM UC), guardar favoritos,
